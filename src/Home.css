@@ -1,0 +1,40 @@
+.home {
+  display: flexbox;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.home__row {
+  display: flex;
+  position: static;
+  z-index: 1;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
+}
+
+.zoom {
+  padding: 15px;
+
+  transition: transform 0.2s; /* Animation */
+  width: 303px;
+  height: 425px;
+  margin: 1px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+.home__image {
+  width: 100%;
+
+  z-index: -3;
+  margin-bottom: 5px;
+  margin-bottom: -200px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
